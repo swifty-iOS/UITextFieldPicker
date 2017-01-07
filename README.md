@@ -4,7 +4,7 @@ This is text field picker that helps you open picker inside **UITextField** with
 ![Image](sample.png)
 
 ##How to Use
-It is very simple and easy to use. You no need to woory about any thing. You just need oto follow below mension steps. By default it supports String type data. You want someting else, you can [Customize Picker View](README.md##Customize).
+It is very simple and easy to use. You no need to woory about any thing. You just need oto follow below mension steps. By default it supports String type data. You want someting else, you can [Customize Picker View](README.md#customize-picker-view).
 
 > Create **IBOutlet** of **MBTextFieldPicker**
 
@@ -29,7 +29,7 @@ friutTextField.autoUpdate = true //Automatically update textField value while se
 
 > > **close**: It will automatically close picker view on button action 
 > > 
-> > **default**: You need to manually [close](README.md####Closing) picker view
+> > **default**: You need to manually [close](README.md#closing-picker-view) picker view
 
 
 ```swift
