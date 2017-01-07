@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MBTextPicker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MBTextFieldPicker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,30 +21,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XTe-y2-FZb">
-                                <rect key="frame" x="112" y="41" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XTe-y2-FZb" customClass="MBTextFieldPicker" customModule="MBTextFieldPicker" customModuleProvider="target">
+                                <rect key="frame" x="20.5" y="40" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3Q0-lJ-q2z"/>
+                                    <constraint firstAttribute="width" constant="280" id="c3m-6v-HDd"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LGq-pk-c6d">
-                                <rect key="frame" x="100" y="137" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LGq-pk-c6d">
+                                <rect key="frame" x="20.5" y="140" width="280" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2HK-Vj-ERH">
-                                <rect key="frame" x="100" y="79" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2HK-Vj-ERH">
+                                <rect key="frame" x="20.5" y="90" width="280" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.33777012353976477" green="0.61284189556223512" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XTe-y2-FZb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1VI-0u-0T3"/>
+                            <constraint firstItem="2HK-Vj-ERH" firstAttribute="centerX" secondItem="XTe-y2-FZb" secondAttribute="centerX" id="Hhe-fD-axx"/>
+                            <constraint firstItem="LGq-pk-c6d" firstAttribute="top" secondItem="2HK-Vj-ERH" secondAttribute="bottom" constant="20" id="MRV-hG-OGb"/>
+                            <constraint firstItem="LGq-pk-c6d" firstAttribute="centerX" secondItem="2HK-Vj-ERH" secondAttribute="centerX" id="VJI-RO-fIb"/>
+                            <constraint firstItem="2HK-Vj-ERH" firstAttribute="top" secondItem="XTe-y2-FZb" secondAttribute="bottom" constant="20" id="boo-Qc-k1b"/>
+                            <constraint firstItem="2HK-Vj-ERH" firstAttribute="width" secondItem="XTe-y2-FZb" secondAttribute="width" id="gg9-8K-52x"/>
+                            <constraint firstItem="XTe-y2-FZb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="kDw-Ml-B4S"/>
+                            <constraint firstItem="LGq-pk-c6d" firstAttribute="height" secondItem="XTe-y2-FZb" secondAttribute="height" id="mG6-ro-mvZ"/>
+                            <constraint firstItem="LGq-pk-c6d" firstAttribute="width" secondItem="XTe-y2-FZb" secondAttribute="width" id="nJV-6D-en0"/>
+                            <constraint firstItem="2HK-Vj-ERH" firstAttribute="height" secondItem="XTe-y2-FZb" secondAttribute="height" id="wDE-f8-ccA"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleTextField" destination="XTe-y2-FZb" id="3Np-S2-JF0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
