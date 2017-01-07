@@ -31,13 +31,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LGq-pk-c6d">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LGq-pk-c6d" customClass="MBTextFieldPicker" customModule="MBTextFieldPicker" customModuleProvider="target">
                                 <rect key="frame" x="20.5" y="140" width="280" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2HK-Vj-ERH">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2HK-Vj-ERH" customClass="MBTextFieldPicker" customModule="MBTextFieldPicker" customModuleProvider="target">
                                 <rect key="frame" x="20.5" y="90" width="280" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -59,7 +59,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="titleTextField" destination="XTe-y2-FZb" id="3Np-S2-JF0"/>
+                        <outlet property="textField1" destination="XTe-y2-FZb" id="WtA-GB-r3F"/>
+                        <outlet property="textField2" destination="2HK-Vj-ERH" id="HuL-M9-3BQ"/>
+                        <outlet property="textField3" destination="LGq-pk-c6d" id="FER-ec-qPg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

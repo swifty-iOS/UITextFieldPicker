@@ -15,8 +15,6 @@ enum MBTextFieldPickerActionStyle : Int {
 
 class MBTextFieldPicker: UITextField {
     
-    
-    
     fileprivate var picker: UIPickerView? {
         didSet{
             self.inputView = picker
@@ -85,11 +83,9 @@ extension MBTextFieldPicker {
             toolbar.items = [self.leftButton!, UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil),self.rightButton!]
         } else {
             toolbar.items = [self.leftButton!, UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)]
-            
         }
         toolbar.sizeToFit()
         self.inputAccessoryView = toolbar
-        
     }
     
     func setRightButton(_ title: String, style: MBTextFieldPickerActionStyle, handler:((Void) -> Void)?) {
@@ -106,7 +102,6 @@ extension MBTextFieldPicker {
         }
         toolbar.sizeToFit()
         self.inputAccessoryView = toolbar
-        
     }
     
     @objc fileprivate func buttonAction(sender: PickerButton) {
@@ -116,12 +111,9 @@ extension MBTextFieldPicker {
         sender.completionBlock?()
     }
     
-    func showDefaultString(){
-        self.text = self.defaultSelectedString
-    }
-    func closePicker(){
-        self.resignFirstResponder()
-    }
+    func showDefaultString(){ self.text = self.defaultSelectedString }
+    
+    func closePicker(){ self.resignFirstResponder() }
 }
 
 extension MBTextFieldPicker: UIPickerViewDelegate, UIPickerViewDataSource {
@@ -143,8 +135,6 @@ extension MBTextFieldPicker: UIPickerViewDelegate, UIPickerViewDataSource {
     }
 }
 
-
-
 extension MBTextFieldPicker: UITextFieldDelegate {
     
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
@@ -161,13 +151,15 @@ extension MBTextFieldPicker: UITextFieldDelegate {
     }
 }
 
-
 extension MBTextFieldPicker {
     
+    fileprivate struct KeyPath {
+        static var Delegate: String { return "delegate" }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-       // self.addObserver(self, forKeyPath: "delegate", options: .new, context: nil)
+        self.addObserver(self, forKeyPath: KeyPath.Delegate, options: .new, context: nil)
         self.setupPicker()
     }
     
@@ -178,8 +170,10 @@ extension MBTextFieldPicker {
     
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        if keyPath == "delegate" {
+        if keyPath == KeyPath.Delegate {
+            self.removeObserver(self, forKeyPath: KeyPath.Delegate, context: nil)
             self.delegate = self
+            self.addObserver(self, forKeyPath: KeyPath.Delegate, options: .new, context: nil)
         }
     }
 }
