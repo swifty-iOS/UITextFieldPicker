@@ -53,7 +53,7 @@ class MBTextFieldPicker: UITextField {
     
     /* User access properties*/
     
-    var autoUpdate = true
+    var autoUpdate = false
     var defaultSelectedString: String?
     var selectedString: String? {
         if self.selectedIndex>=0, self.selectedIndex<self.dataSet.count, self.pickerDelegate == nil {
