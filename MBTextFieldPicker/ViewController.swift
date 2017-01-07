@@ -14,6 +14,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var textField2: MBTextFieldPicker!
     @IBOutlet weak var textField3: MBTextFieldPicker!
     
+    var dataSet = ["Text1","Text2","Text3","Text4","Text5"]
     override func viewDidLoad() {
         super.viewDidLoad()
         self.demo1()
@@ -58,7 +59,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         textField3.placeholder = "Fruite"
         textField3.defaultSelectedString = nil
         textField3.dataSet = ["Apple", "Banana", "Blackberry", "Mango", "Orange", "Pineapple"]
-        
+        textField3.pickerDelegate = self
         textField3.setRightButton("Done", style: .default) {
             self.textField3.defaultSelectedString = self.textField3.selectedString
             print(self.textField3.selectedString ?? "Selected value")
@@ -69,7 +70,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
             self.textField3.showDefaultString()
         }
     }
-    
-    
+}
+
+extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return self.dataSet[row]
+    }
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return self.dataSet.count
+    }
 }
 
