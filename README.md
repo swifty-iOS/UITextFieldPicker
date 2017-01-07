@@ -37,9 +37,17 @@ friutTextField.setRightButton("Done", style: .default) {
             print(self.friutTextField.selectedString)
             self.friutTextField.closePicker()
         }
-        
-        friutTextField.setLeftButton("Cancel", style: .close) {
+                
+friutTextField.setLeftButton("Cancel", style: .close) {
             self.textField3.showDefaultString()
+        }
+```
+
+> Tracking Picker selection items 
+
+```swift
+friutTextField.trackPickerSelection() { str in
+            print("\(str)")
         }
 ```
 

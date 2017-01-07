@@ -33,22 +33,26 @@ class ViewController: UIViewController, UITextFieldDelegate {
         textField1.placeholder = "Fruite"
         textField1.defaultSelectedString = nil
         textField1.dataSet = ["Apple", "Banana", "Blackberry", "Mango", "Orange", "Pineapple"]
+        textField2.autoUpdate = true
         textField1.setRightButton("Done", style: .default) {
             self.textField1.defaultSelectedString = self.textField1.selectedString
             self.textField1.showDefaultString()
-            print(self.textField1.selectedString ?? "Selected value")
+            print("\(self.textField1.selectedString)")
             self.textField1.closePicker()
         }
         
         textField1.setLeftButton("Cancel", style: .close) {
             self.textField1.showDefaultString()
         }
+        textField1.trackPickerSelection() { str in
+            print("\(str)")
+        }
     }
     func demo2() {
         textField2.placeholder = "Fruite"
         textField1.defaultSelectedString = nil
         textField2.dataSet = ["Apple", "Banana", "Blackberry", "Mango", "Orange", "Pineapple"]
-        textField2.autoUpdate = false
+        
         textField2.setRightButton("Done", style: .default) {
             self.textField2.defaultSelectedString = self.textField2.selectedString
             self.textField2.showDefaultString()

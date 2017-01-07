@@ -24,7 +24,7 @@ class MBTextFieldPicker: UITextField {
     
     fileprivate var leftButton: PickerButton?
     fileprivate var rightButton: PickerButton?
-    
+    fileprivate var trackSelection :((String?) -> Void)?
     var dataSet: Array<String> = [] {
         didSet {
             self.picker?.reloadAllComponents()
@@ -114,6 +114,8 @@ extension MBTextFieldPicker {
     func showDefaultString(){ self.text = self.defaultSelectedString }
     
     func closePicker(){ self.resignFirstResponder() }
+    
+    func trackPickerSelection(handler:@escaping (String?) -> Void) { self.trackSelection = handler }
 }
 
 extension MBTextFieldPicker: UIPickerViewDelegate, UIPickerViewDataSource {
@@ -132,6 +134,7 @@ extension MBTextFieldPicker: UIPickerViewDelegate, UIPickerViewDataSource {
         if self.autoUpdate {
             self.text = self.selectedString
         }
+        self.trackSelection?(self.selectedString)
     }
 }
 
@@ -144,6 +147,7 @@ extension MBTextFieldPicker: UITextFieldDelegate {
         }
         self.picker?.reloadAllComponents()
         self.picker?.selectRow(self.selectedIndex, inComponent: 0, animated: false)
+        self.trackSelection?(self.selectedString)
         if self.autoUpdate {
             self.text = self.selectedString
         }
