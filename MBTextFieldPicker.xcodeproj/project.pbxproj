@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		134D20021E20D9C800E205C3 /* MBTextPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBTextPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		134D20021E20D9C800E205C3 /* MBTextFieldPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBTextFieldPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		134D20051E20D9C800E205C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		134D20071E20D9C800E205C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		134D200A1E20D9C900E205C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,7 +38,7 @@
 		134D1FF91E20D9C800E205C3 = {
 			isa = PBXGroup;
 			children = (
-				134D20041E20D9C800E205C3 /* MBTextPicker */,
+				134D20041E20D9C800E205C3 /* MBTextFieldPicker */,
 				134D20031E20D9C800E205C3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,12 +46,12 @@
 		134D20031E20D9C800E205C3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				134D20021E20D9C800E205C3 /* MBTextPicker.app */,
+				134D20021E20D9C800E205C3 /* MBTextFieldPicker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		134D20041E20D9C800E205C3 /* MBTextPicker */ = {
+		134D20041E20D9C800E205C3 /* MBTextFieldPicker */ = {
 			isa = PBXGroup;
 			children = (
 				134D20051E20D9C800E205C3 /* AppDelegate.swift */,
@@ -61,15 +61,15 @@
 				134D200E1E20D9C900E205C3 /* LaunchScreen.storyboard */,
 				134D20111E20D9C900E205C3 /* Info.plist */,
 			);
-			path = MBTextPicker;
+			path = MBTextFieldPicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		134D20011E20D9C800E205C3 /* MBTextPicker */ = {
+		134D20011E20D9C800E205C3 /* MBTextFieldPicker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 134D20141E20D9C900E205C3 /* Build configuration list for PBXNativeTarget "MBTextPicker" */;
+			buildConfigurationList = 134D20141E20D9C900E205C3 /* Build configuration list for PBXNativeTarget "MBTextFieldPicker" */;
 			buildPhases = (
 				134D1FFE1E20D9C800E205C3 /* Sources */,
 				134D1FFF1E20D9C800E205C3 /* Frameworks */,
@@ -79,9 +79,9 @@
 			);
 			dependencies = (
 			);
-			name = MBTextPicker;
+			name = MBTextFieldPicker;
 			productName = MBTextPicker;
-			productReference = 134D20021E20D9C800E205C3 /* MBTextPicker.app */;
+			productReference = 134D20021E20D9C800E205C3 /* MBTextFieldPicker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -100,7 +100,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 134D1FFD1E20D9C800E205C3 /* Build configuration list for PBXProject "MBTextPicker" */;
+			buildConfigurationList = 134D1FFD1E20D9C800E205C3 /* Build configuration list for PBXProject "MBTextFieldPicker" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -113,7 +113,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				134D20011E20D9C800E205C3 /* MBTextPicker */,
+				134D20011E20D9C800E205C3 /* MBTextFieldPicker */,
 			);
 		};
 /* End PBXProject section */
@@ -260,9 +260,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = MBTextPicker/Info.plist;
+				INFOPLIST_FILE = MBTextFieldPicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = manish.MBTextPicker;
+				PRODUCT_BUNDLE_IDENTIFIER = manish.MBTextFieldPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -272,9 +272,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = MBTextPicker/Info.plist;
+				INFOPLIST_FILE = MBTextFieldPicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = manish.MBTextPicker;
+				PRODUCT_BUNDLE_IDENTIFIER = manish.MBTextFieldPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -283,7 +283,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		134D1FFD1E20D9C800E205C3 /* Build configuration list for PBXProject "MBTextPicker" */ = {
+		134D1FFD1E20D9C800E205C3 /* Build configuration list for PBXProject "MBTextFieldPicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				134D20121E20D9C900E205C3 /* Debug */,
@@ -292,13 +292,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		134D20141E20D9C900E205C3 /* Build configuration list for PBXNativeTarget "MBTextPicker" */ = {
+		134D20141E20D9C900E205C3 /* Build configuration list for PBXNativeTarget "MBTextFieldPicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				134D20151E20D9C900E205C3 /* Debug */,
 				134D20161E20D9C900E205C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
