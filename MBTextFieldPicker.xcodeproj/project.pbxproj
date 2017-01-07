@@ -12,7 +12,7 @@
 		134D200B1E20D9C900E205C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 134D20091E20D9C800E205C3 /* Main.storyboard */; };
 		134D200D1E20D9C900E205C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 134D200C1E20D9C900E205C3 /* Assets.xcassets */; };
 		134D20101E20D9C900E205C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 134D200E1E20D9C900E205C3 /* LaunchScreen.storyboard */; };
-		134D201A1E20E1D300E205C3 /* MBTextFieldPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134D20191E20E1D300E205C3 /* MBTextFieldPicker.swift */; };
+		13FF1B111E215A4100EA5BB2 /* MBTextFieldPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FF1B101E215A4100EA5BB2 /* MBTextFieldPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		134D200C1E20D9C900E205C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		134D200F1E20D9C900E205C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		134D20111E20D9C900E205C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		134D20191E20E1D300E205C3 /* MBTextFieldPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBTextFieldPicker.swift; sourceTree = "<group>"; };
+		13FF1B101E215A4100EA5BB2 /* MBTextFieldPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBTextFieldPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +56,10 @@
 		134D20041E20D9C800E205C3 /* MBTextFieldPicker */ = {
 			isa = PBXGroup;
 			children = (
+				13FF1B101E215A4100EA5BB2 /* MBTextFieldPicker.swift */,
 				134D20051E20D9C800E205C3 /* AppDelegate.swift */,
 				134D20071E20D9C800E205C3 /* ViewController.swift */,
 				134D20091E20D9C800E205C3 /* Main.storyboard */,
-				134D20191E20E1D300E205C3 /* MBTextFieldPicker.swift */,
 				134D200C1E20D9C900E205C3 /* Assets.xcassets */,
 				134D200E1E20D9C900E205C3 /* LaunchScreen.storyboard */,
 				134D20111E20D9C900E205C3 /* Info.plist */,
@@ -139,7 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				134D201A1E20E1D300E205C3 /* MBTextFieldPicker.swift in Sources */,
+				13FF1B111E215A4100EA5BB2 /* MBTextFieldPicker.swift in Sources */,
 				134D20081E20D9C800E205C3 /* ViewController.swift in Sources */,
 				134D20061E20D9C800E205C3 /* AppDelegate.swift in Sources */,
 			);

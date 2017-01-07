@@ -35,6 +35,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         textField1.dataSet = ["Apple", "Banana", "Blackberry", "Mango", "Orange", "Pineapple"]
         textField1.setRightButton("Done", style: .default) {
             self.textField1.defaultSelectedString = self.textField1.selectedString
+            self.textField1.showDefaultString()
             print(self.textField1.selectedString ?? "Selected value")
             self.textField1.closePicker()
         }
