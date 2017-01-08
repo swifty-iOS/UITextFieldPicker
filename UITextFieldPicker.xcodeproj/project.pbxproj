@@ -12,18 +12,18 @@
 		134D200B1E20D9C900E205C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 134D20091E20D9C800E205C3 /* Main.storyboard */; };
 		134D200D1E20D9C900E205C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 134D200C1E20D9C900E205C3 /* Assets.xcassets */; };
 		134D20101E20D9C900E205C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 134D200E1E20D9C900E205C3 /* LaunchScreen.storyboard */; };
-		13FF1B111E215A4100EA5BB2 /* MBTextFieldPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FF1B101E215A4100EA5BB2 /* MBTextFieldPicker.swift */; };
+		13FF1B111E215A4100EA5BB2 /* UITextFieldPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FF1B101E215A4100EA5BB2 /* UITextFieldPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		134D20021E20D9C800E205C3 /* MBTextFieldPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBTextFieldPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		134D20021E20D9C800E205C3 /* UITextFieldPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITextFieldPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		134D20051E20D9C800E205C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		134D20071E20D9C800E205C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		134D200A1E20D9C900E205C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		134D200C1E20D9C900E205C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		134D200F1E20D9C900E205C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		134D20111E20D9C900E205C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		13FF1B101E215A4100EA5BB2 /* MBTextFieldPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBTextFieldPicker.swift; sourceTree = "<group>"; };
+		13FF1B101E215A4100EA5BB2 /* UITextFieldPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +40,7 @@
 		134D1FF91E20D9C800E205C3 = {
 			isa = PBXGroup;
 			children = (
-				134D20041E20D9C800E205C3 /* MBTextFieldPicker */,
+				134D20041E20D9C800E205C3 /* UITextFieldPicker */,
 				134D20031E20D9C800E205C3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,15 +48,15 @@
 		134D20031E20D9C800E205C3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				134D20021E20D9C800E205C3 /* MBTextFieldPicker.app */,
+				134D20021E20D9C800E205C3 /* UITextFieldPicker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		134D20041E20D9C800E205C3 /* MBTextFieldPicker */ = {
+		134D20041E20D9C800E205C3 /* UITextFieldPicker */ = {
 			isa = PBXGroup;
 			children = (
-				13FF1B101E215A4100EA5BB2 /* MBTextFieldPicker.swift */,
+				13FF1B101E215A4100EA5BB2 /* UITextFieldPicker.swift */,
 				134D20051E20D9C800E205C3 /* AppDelegate.swift */,
 				134D20071E20D9C800E205C3 /* ViewController.swift */,
 				134D20091E20D9C800E205C3 /* Main.storyboard */,
@@ -64,15 +64,15 @@
 				134D200E1E20D9C900E205C3 /* LaunchScreen.storyboard */,
 				134D20111E20D9C900E205C3 /* Info.plist */,
 			);
-			path = MBTextFieldPicker;
+			path = UITextFieldPicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		134D20011E20D9C800E205C3 /* MBTextFieldPicker */ = {
+		134D20011E20D9C800E205C3 /* UITextFieldPicker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 134D20141E20D9C900E205C3 /* Build configuration list for PBXNativeTarget "MBTextFieldPicker" */;
+			buildConfigurationList = 134D20141E20D9C900E205C3 /* Build configuration list for PBXNativeTarget "UITextFieldPicker" */;
 			buildPhases = (
 				134D1FFE1E20D9C800E205C3 /* Sources */,
 				134D1FFF1E20D9C800E205C3 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = MBTextFieldPicker;
+			name = UITextFieldPicker;
 			productName = MBTextPicker;
-			productReference = 134D20021E20D9C800E205C3 /* MBTextFieldPicker.app */;
+			productReference = 134D20021E20D9C800E205C3 /* UITextFieldPicker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -103,7 +103,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 134D1FFD1E20D9C800E205C3 /* Build configuration list for PBXProject "MBTextFieldPicker" */;
+			buildConfigurationList = 134D1FFD1E20D9C800E205C3 /* Build configuration list for PBXProject "UITextFieldPicker" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -116,7 +116,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				134D20011E20D9C800E205C3 /* MBTextFieldPicker */,
+				134D20011E20D9C800E205C3 /* UITextFieldPicker */,
 			);
 		};
 /* End PBXProject section */
@@ -139,7 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13FF1B111E215A4100EA5BB2 /* MBTextFieldPicker.swift in Sources */,
+				13FF1B111E215A4100EA5BB2 /* UITextFieldPicker.swift in Sources */,
 				134D20081E20D9C800E205C3 /* ViewController.swift in Sources */,
 				134D20061E20D9C800E205C3 /* AppDelegate.swift in Sources */,
 			);
@@ -264,9 +264,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = MBTextFieldPicker/Info.plist;
+				INFOPLIST_FILE = UITextFieldPicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = manish.MBTextFieldPicker;
+				PRODUCT_BUNDLE_IDENTIFIER = manish.UITextFieldPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -276,9 +276,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = MBTextFieldPicker/Info.plist;
+				INFOPLIST_FILE = UITextFieldPicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = manish.MBTextFieldPicker;
+				PRODUCT_BUNDLE_IDENTIFIER = manish.UITextFieldPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -287,7 +287,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		134D1FFD1E20D9C800E205C3 /* Build configuration list for PBXProject "MBTextFieldPicker" */ = {
+		134D1FFD1E20D9C800E205C3 /* Build configuration list for PBXProject "UITextFieldPicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				134D20121E20D9C900E205C3 /* Debug */,
@@ -296,7 +296,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		134D20141E20D9C900E205C3 /* Build configuration list for PBXNativeTarget "MBTextFieldPicker" */ = {
+		134D20141E20D9C900E205C3 /* Build configuration list for PBXNativeTarget "UITextFieldPicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				134D20151E20D9C900E205C3 /* Debug */,

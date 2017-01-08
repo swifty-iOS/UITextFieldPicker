@@ -1,6 +1,6 @@
 //
-//  MBTextFieldPicker.swift
-//  MBTextFieldPicker
+//  UITextFieldPicker.swift
+//  UITextFieldPicker
 //
 //  Created by Manish Bhande on 07/01/17.
 //  Copyright © 2017 Manish Bhande. All rights reserved.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-enum MBTextFieldPickerActionStyle : Int {
+enum UITextFieldPickerActionStyle : Int {
     case `default`
     case close
 }
 
-class MBTextFieldPicker: UITextField {
+class UITextFieldPicker: UITextField {
     
     fileprivate var picker: UIPickerView? {
         didSet{
@@ -63,7 +63,7 @@ class MBTextFieldPicker: UITextField {
     }
 }
 
-extension MBTextFieldPicker {
+extension UITextFieldPicker {
     
     func setupPicker() {
         self.delegate = self
@@ -73,10 +73,10 @@ extension MBTextFieldPicker {
         self.picker = picker
     }
     
-    func setLeftButton(_ title: String, style: MBTextFieldPickerActionStyle, handler:((Void) -> Void)?) {
+    func setLeftButton(_ title: String, style: UITextFieldPickerActionStyle, handler:((Void) -> Void)?) {
         
         let toolbar = self.toolBar
-        self.leftButton = PickerButton(title: title, style: .plain, target: self, action:#selector(MBTextFieldPicker.buttonAction))
+        self.leftButton = PickerButton(title: title, style: .plain, target: self, action:#selector(UITextFieldPicker.buttonAction))
         self.leftButton?.completionBlock = handler
         self.leftButton?.actionStyle = style
         if self.rightButton != nil {
@@ -88,10 +88,10 @@ extension MBTextFieldPicker {
         self.inputAccessoryView = toolbar
     }
     
-    func setRightButton(_ title: String, style: MBTextFieldPickerActionStyle, handler:((Void) -> Void)?) {
+    func setRightButton(_ title: String, style: UITextFieldPickerActionStyle, handler:((Void) -> Void)?) {
         
         let toolbar = self.toolBar
-        self.rightButton = PickerButton(title: title, style: .plain, target: self, action:#selector(MBTextFieldPicker.buttonAction))
+        self.rightButton = PickerButton(title: title, style: .plain, target: self, action:#selector(UITextFieldPicker.buttonAction))
         self.rightButton?.completionBlock = handler
         self.rightButton?.actionStyle = style
         
@@ -118,7 +118,7 @@ extension MBTextFieldPicker {
     func trackPickerSelection(handler:@escaping (String?) -> Void) { self.trackSelection = handler }
 }
 
-extension MBTextFieldPicker: UIPickerViewDelegate, UIPickerViewDataSource {
+extension UITextFieldPicker: UIPickerViewDelegate, UIPickerViewDataSource {
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -138,7 +138,7 @@ extension MBTextFieldPicker: UIPickerViewDelegate, UIPickerViewDataSource {
     }
 }
 
-extension MBTextFieldPicker: UITextFieldDelegate {
+extension UITextFieldPicker: UITextFieldDelegate {
     
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         self.selectedIndex = 0
@@ -153,9 +153,13 @@ extension MBTextFieldPicker: UITextFieldDelegate {
         }
         return true
     }
+    
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
+        
+    }
 }
 
-extension MBTextFieldPicker {
+extension UITextFieldPicker {
     
     fileprivate struct KeyPath {
         static var Delegate: String { return "delegate" }
@@ -185,5 +189,5 @@ extension MBTextFieldPicker {
 
 fileprivate class PickerButton: UIBarButtonItem {
     var completionBlock: ((Void)-> Void)?
-    var actionStyle = MBTextFieldPickerActionStyle.default
+    var actionStyle = UITextFieldPickerActionStyle.default
 }

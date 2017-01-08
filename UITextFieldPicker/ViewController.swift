@@ -10,9 +10,9 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
-    @IBOutlet weak var textField1: MBTextFieldPicker!
-    @IBOutlet weak var textField2: MBTextFieldPicker!
-    @IBOutlet weak var textField3: MBTextFieldPicker!
+    @IBOutlet weak var textField1: UITextFieldPicker!
+    @IBOutlet weak var textField2: UITextFieldPicker!
+    @IBOutlet weak var textField3: UITextFieldPicker!
     
     var dataSet = ["Text1","Text2","Text3","Text4","Text5"]
     override func viewDidLoad() {
