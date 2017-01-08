@@ -10,9 +10,9 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
-    @IBOutlet weak var textField1: MBTextFieldPicker!
-    @IBOutlet weak var textField2: MBTextFieldPicker!
-    @IBOutlet weak var textField3: MBTextFieldPicker!
+    @IBOutlet weak var textField1: UITextFieldPicker!
+    @IBOutlet weak var textField2: UITextFieldPicker!
+    @IBOutlet weak var textField3: UITextFieldPicker!
     
     var dataSet = ["Text1","Text2","Text3","Text4","Text5"]
     override func viewDidLoad() {
@@ -33,21 +33,26 @@ class ViewController: UIViewController, UITextFieldDelegate {
         textField1.placeholder = "Fruite"
         textField1.defaultSelectedString = nil
         textField1.dataSet = ["Apple", "Banana", "Blackberry", "Mango", "Orange", "Pineapple"]
+        textField2.autoUpdate = true
         textField1.setRightButton("Done", style: .default) {
             self.textField1.defaultSelectedString = self.textField1.selectedString
-            print(self.textField1.selectedString ?? "Selected value")
+            self.textField1.showDefaultString()
+            print("\(self.textField1.selectedString)")
             self.textField1.closePicker()
         }
         
         textField1.setLeftButton("Cancel", style: .close) {
             self.textField1.showDefaultString()
         }
+        textField1.trackPickerSelection() { str in
+            print("\(str)")
+        }
     }
     func demo2() {
         textField2.placeholder = "Fruite"
         textField1.defaultSelectedString = nil
         textField2.dataSet = ["Apple", "Banana", "Blackberry", "Mango", "Orange", "Pineapple"]
-        textField2.autoUpdate = false
+        
         textField2.setRightButton("Done", style: .default) {
             self.textField2.defaultSelectedString = self.textField2.selectedString
             self.textField2.showDefaultString()
